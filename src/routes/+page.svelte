@@ -1,15 +1,10 @@
 <script>
 	import logo from '$lib/images/TASLA logo.png';
+  	import Main from './Main.svelte';
+
 </script>
 
-<svelte:head>
-	<title>TASLA</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
-
-<section>
-
-</section>
+<Main/>
 
 <style>
 	section {

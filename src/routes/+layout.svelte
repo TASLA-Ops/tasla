@@ -7,7 +7,7 @@
 <div class="app">
 	<Header />
 
-	<Main />
+	<slot/>
 
 	<footer>
 
