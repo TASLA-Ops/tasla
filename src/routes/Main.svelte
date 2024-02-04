@@ -7,6 +7,10 @@
     import asset5 from '$lib/images/bxs-bank 1.svg';
     import asset6 from '$lib/images/bx-book-open 1.svg';
     import asset7 from '$lib/images/bx-chat 1.svg';
+    import glints from '$lib/images/glints.png';
+    import JungleVentures from '$lib/images/Jungle Ventures.jpg';
+    import mhv from '$lib/images/MHV.png';
+    import { goto } from '$app/navigation';
 </script>
 <div class="section one bg-black py-5">
   <div class="text-center text-neutral-100 text-4xl font-black font-primary">Where Future Leaders Unlock Their Potentials</div>
@@ -90,7 +94,37 @@
   <div class=" py-3 text-white text-xl font-normal font-primary">The community manager is there to help and guide TASLA scholars for any TASLA related activity.</div>
   <div class=" py-1 text-white text-4xl font-black font-primary">The scholars</div>
   <div class=" py-3 text-white text-xl font-normal font-primary">Those who obtain the TASLA scholarships, every cohort has different amount of students selected as TASLA scholars. As for now, the application is only open for UI and ITB STEM students.</div>
-  <div class="circle">
-    <div class="py-5 text-white text-2xl font-normal font-primary">Learn more about the organization</div>
+  <br>
+  <button class="bg-gradient-to-b from-cyan-300 to-indigo-600 text-white text-xl font-bold font-primary rounded-md py-3 px-4" on:click={() => goto("/our-organization")}>Learn more about the organization</button>
+</div>
+
+<div class="h-[150px] transition bg-gradient-to-b from-black to-gray-700 shadow"></div>
+
+<div class="bg-gray-700 shadow py-4">
+  <h2 class="text-center text-white text-2xl md:text-3xl lg:text-4xl font-bold">Who are our sponsors?</h2>
+  <div class="flex flex-row justify-center items-center gap-4 md:gap-6 p-4 md:p-8">
+    <div class="flex justify-center items-center  rounded-lg shadow-lg w-1/6 p-4">
+      <img class="h-full w-full object-contain" src="{glints}" alt="Glints" />
+    </div>
+    <div class="flex justify-center items-center  rounded-lg shadow-lg w-1/6 p-4">
+      <img class="h-full w-full object-contain" src="{JungleVentures}" alt="Jungle Ventures" />
+    </div>
+    <div class="flex justify-center items-center  rounded-lg shadow-lg w-1/3 p-4">
+      <img class="h-full w-full object-contain" src="{mhv}" alt="Monk's Hill Ventures" />
+    </div>
   </div>
+  <div class="text-center">
+    <button class="bg-gradient-to-b from-cyan-300 to-indigo-600 text-white text-xl font-bold font-primary rounded-md py-3 px-4" on:click={() => goto("/sponsors")}>
+      Learn more about TASLA
+    </button>
+  </div>
+</div>
+
+<div class="h-[150px] transition bg-gradient-to-b from-gray-700 to-black shadow"></div>
+
+<div class="bg-black flex flex-col px-5 py-5">
+	<div class="text-white text-4xl font-black font-primary py-5">Interested to be our sponsor?</div>
+	<div class="text-justify text-white text-xl font-normal font-primary py-5">By being TASLA sponsor, you are helping Indonesia to nurture more future leaders. A lot of our Alumni has proven a significant contribution throughout the Indonesia ecosystem. This can be part of your contribution too!</div>
+	<div class="text-white text-4xl font-black font-primary py-5">Contact us!</div>
+	<div class="text-white text-xl font-black font-primary py-5">Email: admin@csleaders.com<br/>Instagram: tasla_org<br/>Our Contact Form</div>
 </div>
