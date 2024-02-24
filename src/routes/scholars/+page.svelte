@@ -28,7 +28,16 @@
         { id: 13, name: 'Abdurrafi Arief', year: '2018', imageUrl: 'src/lib/listOfScholars/Abdurrafi-Arief.jpg' },
         { id: 14, name: 'Khadijah Rizqy', year: '2018', imageUrl: 'src/lib/listOfScholars/Khadijah-Rizqy.jpg' },
         { id: 15, name: 'Michel Fang', year:'2018', imageUrl: 'src/lib/listOfScholars/Michel-Fang.jpg'},
-        { id: 16, name: 'Tolhas Jonathan', year:'2018', imageUrl: 'src/lib/listOfScholars/Tolhas-Jonathan.jpg'}
+        { id: 16, name: 'Tolhas Jonathan', year:'2018', imageUrl: 'src/lib/listOfScholars/Tolhas-Jonathan.jpg'},
+        { id: 17, name: 'Priyanty Nurul Fatimah', year: '2019', imageUrl: 'src/lib/listOfScholars/Priyanti-Nurul.jpeg' },
+        { id: 18, name: 'James Chandra', year:'2019', imageUrl: 'src/lib/listOfScholars/James-Chandra.png'},
+        { id: 19, name: 'Dennis Al Baihaqi Walangadi', year:'2019', imageUrl: 'src/lib/listOfScholars/Dennis-Al.png'},
+        { id: 20, name: 'Patrick Amadeus Irawan', year:'2020', imageUrl: 'src/lib/listOfScholars/Patrick-Amadeus.jpeg'},
+        { id: 21, name: 'Alya Astrid Shakila', year: '2020', imageUrl: 'src/lib/listOfScholars/Alya-Astrid.jpeg' },
+        { id: 22, name: 'Muhammad Sulthan Mazaya', year: '2020', imageUrl: 'src/lib/listOfScholars/Muhammad-Sulthan.jpeg' },
+        { id: 23, name: 'Elisha Rachma Salsabila', year: '2021', imageUrl: 'src/lib/listOfScholars/Elisha-Rachma.jpg' },
+        { id: 24, name: 'Yasmina Ashfa Zahidah', year: '2021', imageUrl: 'src/lib/listOfScholars/Yasmina-Ashfa.jpg' },
+        { id: 25, name: 'Lim Bodhi Wijaya', year:'2022', imageUrl: 'src/lib/listOfScholars/Lim-Bodhi.jpg'},
       ];
   
       scholarsByYear = scholars.reduce((acc, scholar) => {
