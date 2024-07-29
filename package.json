@@ -24,6 +24,8 @@
 		"vite": "^4.4.2"
 	},
 	"type": "module",
+	"engines": {
+    "node": ">=18.18.0 <19.0.0"},
 	"dependencies": {
 		"18": "^0.0.0",
 		"node": "https://registry.npmjs.org/node/-/node-18.20.4.tgz",
