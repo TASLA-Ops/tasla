@@ -1,5 +1,5 @@
 <script>
-    import foto from '$lib/images/Offline Leadership UI.svg';
+    import foto from '$lib/images/Offline Leadership UI.png';
     import asset1 from '$lib/images/homepage_asset1.png';
     import asset2 from '$lib/images/homepage_asset2.png';
     import asset3 from '$lib/images/homepage_asset3.png';
@@ -25,65 +25,71 @@
 <div class="section two bg-gray-700 shadow px-10">
   <div class="py-1 text-left text-white text-4xl font-black font-primary">Experience leadership by practically doing it</div>
   <div class="py-1 text-left text-white text-xl font-primary">TASLA helps unlocking your leadership potentials through viral leadership, you will be exposed to maintain 4 of the following programs.</div>
-  <div class="grid grid-cols-4 py-10">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-3 py-5">
     <div class="w-3/4 mx-auto">
       <div class="relative aspect-w-3 aspect-h-4">
         <img src="{asset1}" alt="Mentorship Program" class="object-cover w-full h-full">
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <span class="text-white text-2xl text-center font-bold font-primary">Mentorship Program</span>
+        <div class="absolute inset-0 flex justify-center items-center">
+          <span class="text-white text-lg md:text-2xl text-center font-bold font-primary">Mentorship Program</span>
         </div>
       </div>
     </div>
     <div class="w-3/4 mx-auto">
       <div class="relative aspect-w-3 aspect-h-4">
-        <img src="{asset2}" alt="primarynship Placement" class="object-cover w-full h-full">
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <span class="text-white text-2xl text-center font-bold font-primary">Internship Placement</span>
+        <img src="{asset2}" alt="Internship Placement" class="object-cover w-full h-full">
+        <div class="absolute inset-0 flex justify-center items-center">
+          <span class="text-white text-lg md:text-2xl text-center font-bold font-primary">Internship Placement</span>
         </div>
       </div>
     </div>
     <div class="w-3/4 mx-auto">
       <div class="relative aspect-w-3 aspect-h-4">
         <img src="{asset3}" alt="Leadership Training" class="object-cover w-full h-full">
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <span class="text-white text-2xl text-center font-bold font-primary">Leadership Training</span>
+        <div class="absolute inset-0 flex justify-center items-center">
+          <span class="text-white text-lg md:text-2xl text-center font-bold font-primary">Leadership Training</span>
         </div>
       </div>
     </div>
     <div class="w-3/4 mx-auto">
       <div class="relative aspect-w-3 aspect-h-4">
         <img src="{asset4}" alt="Community Service" class="object-cover w-full h-full">
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <span class="text-white text-2xl text-center font-bold font-primary">Sharing Session Program</span>
+        <div class="absolute inset-0 flex justify-center items-center">
+          <span class="text-white text-lg md:text-2xl text-center font-bold font-primary">Sharing Session Program</span>
         </div>
       </div>
     </div>
-  </div>
+  </div>  
 </div>
 
 <div class="section three bg-gray-700 shadow py-5 px-10">
-  <div class=" text-white text-4xl font-black font-primary">What are the benefits of being a TASLA scholar?</div>
-  <div class=" break-all text-white text-xl font-normal font-primary">Besides of being exposed to maintain our leadership program, there are several benefits as part of our scholarship.</div>
-  <div class="grid grid-cols-3 gap-x-5 px-48 py-10">
-    <div class="w-[78px] h-[74px] bg-gradient-to-b from-cyan-300 to-indigo-600 rounded-[10px]">
+  <div class="text-white text-4xl font-black font-primary">What are the benefits of being a TASLA scholar?</div>
+  <div class="break-all text-white text-xl font-normal font-primary text-justify hyphens-auto word-spacing">Besides of being exposed to maintain our leadership program, there are several benefits as part of our scholarship.</div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-5 px-10 py-5">
+    <div class="flex flex-col md:flex-row items-center md:items-start bg-gradient-to-b from-cyan-300 to-indigo-600 rounded-[10px] p-4">
       <img src="{asset5}" alt="TASLA Offline Leadership Program at UI" class="w-[78px] h-[74px]">
-      <div class="py-4 w-[291px] h-9 text-white text-2xl font-bold font-primary">Full tuition fee coverage</div>
-      <div class="break-all py-4 w-[354px] h-24 text-white text-xl font-normal font-primary">TASLA is dedicated to fully cover their scholars tuition fee. The tuition fee will be directly transferred to the corresponding scholar’s university.</div>
+      <div class="md:ml-4">
+        <div class="py-4 text-white text-2xl font-bold font-primary">Full tuition fee coverage</div>
+        <div class="break-words py-4 text-white text-xl font-normal font-primary text-justify hyphens-auto word-spacing">TASLA is dedicated to fully cover their scholars tuition fee. The tuition fee will be directly transferred to the corresponding scholar’s university.</div>
+      </div>
     </div>
-    <div class="w-[78px] h-[74px] bg-gradient-to-b from-cyan-300 to-indigo-600 rounded-[10px]">
+    <div class="flex flex-col md:flex-row items-center md:items-start bg-gradient-to-b from-cyan-300 to-indigo-600 rounded-[10px] p-4">
       <img src="{asset6}" alt="TASLA Offline Leadership Program at UI" class="w-[78px] h-[74px]">
-      <div class="py-4 w-[291px] h-9 text-white text-2xl font-bold font-primary">Books Allowance </div>
-      <div class="break-all py-4 w-[354px] h-24 text-white text-xl font-normal font-primary">As part of the scholarship, TASLA scholars will obtain books allowance that will be granted for every semester of their study.</div>
+      <div class="md:ml-4">
+        <div class="py-4 text-white text-2xl font-bold font-primary">Books Allowance</div>
+        <div class="break-words py-4 text-white text-xl font-normal font-primary text-justify hyphens-auto word-spacing">As part of the scholarship, TASLA scholars will obtain books allowance that will be granted for every semester of their study.</div>
+      </div>
     </div>
-    <div class="w-[78px] h-[74px] bg-gradient-to-b from-cyan-300 to-indigo-600 rounded-[10px]">
+    <div class="flex flex-col md:flex-row items-center md:items-start bg-gradient-to-b from-cyan-300 to-indigo-600 rounded-[10px] p-4">
       <img src="{asset7}" alt="TASLA Offline Leadership Program at UI" class="w-[78px] h-[74px]">
-      <div class="py-4 w-[291px] h-9 text-white text-2xl font-bold font-primary">Networks</div>
-      <div class="break-all py-4 w-[393px] h-24 text-white text-xl font-normal font-primary">TASLA is has a network of several big tech companies, often we have the opportunities to invites CEOs to help mentor the scholars about leaderships.</div>
+      <div class="md:ml-4">
+        <div class="py-4 text-white text-2xl font-bold font-primary">Networks</div>
+        <div class="break-words py-4 text-white text-xl font-normal font-primary text-justify hyphens-auto word-spacing">TASLA has a network of several big tech companies, often we have the opportunities to invite CEOs to help mentor the scholars about leadership.</div>
+      </div>
     </div>
-  </div>
+  </div>  
 </div>
 
-<div class="h-[150px] transition bg-gradient-to-b from-gray-700 to-black shadow"></div>
+<div class="h-[75px] transition bg-gradient-to-b from-gray-700 to-black shadow"></div>
 
 <div class="section four bg-black px-10 py-5">
   <div class=" py-1 text-white text-4xl font-black font-primary">How does the TASLA organization looks like?</div>
@@ -100,17 +106,18 @@
 
 <div class="h-[150px] transition bg-gradient-to-b from-black to-gray-700 shadow"></div>
 
+
 <div class="bg-gray-700 shadow py-4">
   <h2 class="text-center text-white text-2xl md:text-3xl lg:text-4xl font-bold">Who are our sponsors?</h2>
-  <div class="flex flex-row justify-center items-center gap-4 md:gap-6 p-4 md:p-8">
-    <div class="flex justify-center items-center  rounded-lg shadow-lg w-1/6 p-4">
-      <img class="h-full w-full object-contain" src="{glints}" alt="Glints" />
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 p-4 md:p-8">
+    <div class="flex justify-center items-center rounded-lg w-full md:w-1/6 p-4">
+      <img class="h-32 w-32 md:h-full md:w-full object-contain" src="{glints}" alt="Glints" />
     </div>
-    <div class="flex justify-center items-center  rounded-lg shadow-lg w-1/6 p-4">
-      <img class="h-full w-full object-contain" src="{JungleVentures}" alt="Jungle Ventures" />
+    <div class="flex justify-center items-center rounded-lg w-full md:w-1/6 p-4">
+      <img class="h-32 w-32 md:h-full md:w-full object-contain" src="{JungleVentures}" alt="Jungle Ventures" />
     </div>
-    <div class="flex justify-center items-center  rounded-lg shadow-lg w-1/3 p-4">
-      <img class="h-full w-full object-contain" src="{mhv}" alt="Monk's Hill Ventures" />
+    <div class="flex justify-center items-center rounded-lg w-full md:w-1/3 p-4">
+      <img class="h-32 w-64 md:h-full md:w-full object-contain" src="{mhv}" alt="Monk's Hill Ventures" />
     </div>
   </div>
   <div class="text-center">
