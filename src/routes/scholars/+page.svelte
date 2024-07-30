@@ -41,71 +41,80 @@
       ];
   
       scholarsByYear = scholars.reduce((acc, scholar) => {
-        if (!acc[scholar.year]) {
-          acc[scholar.year] = [];
-        }
-        acc[scholar.year].push(scholar);
-        return acc;
-      }, {});
-    });
-  
-    $: filteredScholarsByYear = searchQuery
-      ? Object.keys(scholarsByYear).reduce((acc, year) => {
-          // @ts-ignore
-          const filtered = scholarsByYear[year].filter((scholar) =>
-            scholar.name.toLowerCase().includes(searchQuery.toLowerCase())
-          );
-          // @ts-ignore
-          if (filtered.length) acc[year] = filtered;
-          return acc;
-        }, {})
-      : scholarsByYear;
-  </script>
-  
-  <div class="bg-black min-h-screen py-10 px-5">
-    <div class="rounded-lg shadow-xl overflow-hidden flex mb-10"> 
-      <div class="p-6 space-y-4 w-full"> 
-        <div class="text-white text-4xl font-bold font-primary">Our scholars track record</div>
-        <div class="text-white text-justify text-xl font-normal font-primary"> 
-          Our scholars and alumni are all around the world, shaping the industry they are working on with their leadership capacity. Currently, 27% of the Alumni are working overseas, 46% of them are working with a local company (Indonesian company), and 27% of them are pursuing master degree.
-        </div>
-      </div>
-      <div class="flex items-center w-1/2">
-        <img src={afterGradChart} alt="TASLA Alumni Chart"/> 
+    if (!acc[scholar.year]) {
+      acc[scholar.year] = [];
+    }
+    acc[scholar.year].push(scholar);
+    return acc;
+  }, {});
+});
+
+$: filteredScholarsByYear = searchQuery
+  ? Object.keys(scholarsByYear).reduce((acc, year) => {
+      const filtered = scholarsByYear[year].filter((scholar) =>
+        scholar.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      if (filtered.length) acc[year] = filtered;
+      return acc;
+    }, {})
+  : scholarsByYear;
+</script>
+
+<div class="bg-black min-h-screen py-10 px-5">
+  <div class="rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row mb-10">
+    <div class="p-6 md:w-1/2 space-y-4">
+      <div class="text-white text-4xl font-bold font-primary">Our scholars track record</div>
+      <div class="text-white text-justify text-xl font-normal font-primary">
+        Our scholars and alumni are all around the world, shaping the industry they are working on with their leadership capacity. Currently, 27% of the Alumni are working overseas, 46% of them are working with a local company (Indonesian company), and 27% of them are pursuing master degree.
       </div>
     </div>
-  
-    <div class="flex justify-between items-center mb-10">
-      <div class="text-white text-4xl font-black font-primary">Our scholars database</div>
-      <div class="relative w-64">
-        <input
-          class="w-full h-10 pl-2 pr-10 rounded bg-white"
-          type="search"
-          placeholder="Search..."
-          bind:value="{searchQuery}">
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2">
-          <svg class="h-6 w-6 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </div>
-      </div>
+    <div class="md:w-1/2 p-6 flex items-center justify-center md:justify-end">
+      <img src={afterGradChart} alt="TASLA Alumni Chart" class="w-full md:w-auto" />
     </div>
-  
-    <!-- Displaying scholars grouped by year -->
-    {#each Object.keys(filteredScholarsByYear) as year (year)}
-      <div class="mb-8">
-        <h2 class="text-2xl text-white font-bold mb-4">{year}</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {#each filteredScholarsByYear[year] as scholar (scholar.id)}
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow">
-              <img class="w-full h-48 object-cover" src={scholar.imageUrl} alt={scholar.name} />
-              <div class="text-white p-4">
-                <h3 class="text-lg font-semibold">{scholar.name}</h3>
-                <p>{scholar.year}</p>
-              </div>
-            </div>
-          {/each}
-        </div>
-      </div>
-    {/each}
   </div>
+
+  <div class="flex flex-col md:flex-row md:items-center justify-between mb-10">
+    <div class="text-white text-4xl font-black font-primary mb-4 md:mb-0">Our scholars database</div>
+    <div class="relative w-full md:w-64">
+      <input
+        class="w-full h-10 pl-2 pr-10 rounded bg-white"
+        type="search"
+        placeholder="Search..."
+        bind:value="{searchQuery}"
+      />
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2">
+        <svg
+          class="h-6 w-6 fill-current text-gray-600"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  {#each Object.keys(filteredScholarsByYear) as year (year)}
+    <div class="mb-8">
+      <h2 class="text-2xl text-white font-bold mb-4">{year}</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {#each filteredScholarsByYear[year] as scholar (scholar.id)}
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow">
+            <img class="w-full h-48 object-cover" src={scholar.imageUrl} alt={scholar.name} />
+            <div class="text-white p-4">
+              <h3 class="text-lg font-semibold">{scholar.name}</h3>
+              <p>{scholar.year}</p>
+            </div>
+          </div>
+        {/each}
+      </div>
+    </div>
+  {/each}
+</div>
