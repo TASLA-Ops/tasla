@@ -104,7 +104,7 @@
   <button class="bg-gradient-to-b from-cyan-300 to-indigo-600 text-white text-xl font-bold font-primary rounded-md py-3 px-4" on:click={() => goto("/our-organization")}>Learn more about the organization</button>
 </div>
 
-<div class="h-[150px] transition bg-gradient-to-b from-black to-gray-700 shadow"></div>
+<div class="h-[75px] transition bg-gradient-to-b from-black to-gray-700 shadow"></div>
 
 
 <div class="bg-gray-700 shadow py-4">
@@ -127,11 +127,17 @@
   </div>
 </div>
 
-<div class="h-[150px] transition bg-gradient-to-b from-gray-700 to-black shadow"></div>
+<div class="h-[50px] transition bg-gradient-to-b from-gray-700 to-black shadow"></div>
 
 <div class="bg-black flex flex-col px-5 py-5">
 	<div class="text-white text-4xl font-black font-primary py-5">Interested to be our sponsor?</div>
 	<div class="text-justify text-white text-xl font-normal font-primary py-5">By being TASLA sponsor, you are helping Indonesia to nurture more future leaders. A lot of our Alumni has proven a significant contribution throughout the Indonesia ecosystem. This can be part of your contribution too!</div>
 	<div class="text-white text-4xl font-black font-primary py-5">Contact us!</div>
-	<div class="text-white text-xl font-black font-primary py-5">Email: admin@csleaders.com<br/>Instagram: tasla_org<br/>Our Contact Form</div>
+  <div class="text-white text-2xl font-black font-primary">Email:</div>
+  <div class="text-white text-xl font-primary">team@csleaders.org</div>
+  <div class="text-white text-2xl font-black font-primary">Instagram:</div>
+  <div class="text-white text-xl font-primary">tasla_scholarships</div>
+  <div class="text-white text-2xl font-black font-primary">Location:</div>
+  <div class="text-white text-xl font-primary">Pacific Century Place building, Level 22 SCBD Lot 10 Jl. Jend. Sudirman Kav. 52-53 South Jakarta 12190</div>
+  <a href="https://maps.app.goo.gl/oiUdiCiFh5v3W1CV6" class="text-blue-500 underline" target="_blank" rel="noopener noreferrer">View Map</a>
 </div>
