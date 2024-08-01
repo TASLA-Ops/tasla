@@ -12,7 +12,8 @@
 		"@fontsource/fira-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
+		"@sveltejs/adapter-vercel": "^5.4.1",
+		"@sveltejs/kit": "^2.4.0",
 		"@types/cookie": "^0.5.1",
 		"autoprefixer": "^10.4.16",
 		"node": "18.20.4",
@@ -29,6 +30,6 @@
 		"18": "^0.0.0",
 		"node": "https://registry.npmjs.org/node/-/node-18.20.4.tgz",
 		"svelte-routing": "^2.11.0",
-		"vercel": "^33.5.2"
+		"vercel": "^32.3.0"
 	}
 }
